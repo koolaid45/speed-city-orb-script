@@ -80,3 +80,4 @@ local function BUOOJ_fake_script() -- TextButton_2.LocalScript
 	
 end
 coroutine.wrap(BUOOJ_fake_script)()
+
