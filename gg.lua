@@ -13,6 +13,7 @@ local UICorner_2 = Instance.new("UICorner")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
 TextButton.Parent = ScreenGui
 TextButton.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
@@ -49,10 +50,8 @@ local function DTFA_fake_script() -- TextButton.LocalScript
 
 	script.Parent.MouseButton1Click:Connect(function()
 		for i,v in pairs(workspace.TrillionaireCity.TrillionaireOrbs:getChildren()) do
-			local g = game.Players.LocalPlayer.Character.UpperTorso.Position
-			game.Players.LocalPlayer.Character.UpperTorso.Position = v.Core.Position
+                                                        v.Core.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
 			wait(0.1)
-			game.Players.LocalPlayer.Character.UpperTorso.Position = g
 		end
 	end)
 	
@@ -63,31 +62,21 @@ local function BUOOJ_fake_script() -- TextButton_2.LocalScript
 
 	script.Parent.MouseButton1Click:Connect(function()
 		for i,v in pairs(workspace.EliteCity.EliteOrbs:getChildren()) do
-			local g = game.Players.LocalPlayer.Character.UpperTorso.Position
-			game.Players.LocalPlayer.Character.UpperTorso.Position = v.Core.Position
+                                                        v.Core.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
 			wait(0.1)
-			game.Players.LocalPlayer.Character.UpperTorso.Position = g
 		end
 		for i,v in pairs(workspace.EliteCity.EliteOrbsFloat2:getChildren()) do
-			local g = game.Players.LocalPlayer.Character.UpperTorso.Position
-			game.Players.LocalPlayer.Character.UpperTorso.Position = v.Core.Position
+                                                        v.Core.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
 			wait(0.1)
-			game.Players.LocalPlayer.Character.UpperTorso.Position = g
 		end
-		for i,v in pairs(workspace.EliteCity.MegaOrbs:getChildren()) do
-			local g = game.Players.LocalPlayer.Character.UpperTorso.Position
-			game.Players.LocalPlayer.Character.UpperTorso.Position = v.Core.Position
+		for i,v in pairs(workspace.EliteCity.MegaOrbs:getChildren()) dov.Core.Position =                                                                                                                                      v.Core.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
 			wait(0.1)
-			game.Players.LocalPlayer.Character.UpperTorso.Position = g
 		end
 		for i,v in pairs(workspace.EliteCity.EliteOrbsFloat:getChildren()) do
-			local g = game.Players.LocalPlayer.Character.UpperTorso.Position
-			game.Players.LocalPlayer.Character.UpperTorso.Position = v.Core.Position
+                                                        v.Core.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
 			wait(0.1)
-			game.Players.LocalPlayer.Character.UpperTorso.Position = g
 		end
 	end)
 	
 end
 coroutine.wrap(BUOOJ_fake_script)()
-
