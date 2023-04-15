@@ -50,11 +50,11 @@ local function DTFA_fake_script() -- TextButton.LocalScript
 
 	script.Parent.MouseButton1Click:Connect(function()
 		for i,v in pairs(workspace.TrillionaireCity.TrillionaireOrbs:getChildren()) do
-                                                        v.Core.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
+			v.Outside.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
 			wait(0.1)
 		end
 	end)
-	
+
 end
 coroutine.wrap(DTFA_fake_script)()
 local function BUOOJ_fake_script() -- TextButton_2.LocalScript 
@@ -62,22 +62,22 @@ local function BUOOJ_fake_script() -- TextButton_2.LocalScript
 
 	script.Parent.MouseButton1Click:Connect(function()
 		for i,v in pairs(workspace.EliteCity.EliteOrbs:getChildren()) do
-                                                        v.Core.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
+			v.Outside.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
 			wait(0.1)
 		end
 		for i,v in pairs(workspace.EliteCity.EliteOrbsFloat2:getChildren()) do
-                                                        v.Core.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
+			v.Outside.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
 			wait(0.1)
 		end
-		for i,v in pairs(workspace.EliteCity.MegaOrbs:getChildren()) dov.Core.Position =                                                                                                                                      v.Core.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
+		for i,v in pairs(workspace.EliteCity.MegaOrbs:getChildren()) do
+			v.Outside.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
 			wait(0.1)
 		end
 		for i,v in pairs(workspace.EliteCity.EliteOrbsFloat:getChildren()) do
-                                                        v.Core.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
+			v.Outside.Position = game.Players.LocalPlayer.Character.UpperTorso.Position
 			wait(0.1)
 		end
 	end)
-	
+
 end
 coroutine.wrap(BUOOJ_fake_script)()
-
