@@ -8,50 +8,6 @@ local TextButton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local TextButton_2 = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
-
---Properties:
-
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = false
-
-TextButton.Parent = ScreenGui
-TextButton.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
-TextButton.Position = UDim2.new(0.924807012, 1, 0.295099199, 0)
-TextButton.Size = UDim2.new(0, 206, 0, 206)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Trillionaire City"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
-
-UICorner.CornerRadius = UDim.new(0, 20)
-UICorner.Parent = TextButton
-
-TextButton_2.Parent = ScreenGui
-TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
-TextButton_2.Position = UDim2.new(0.924807012, 1, 0.465347111, 0)
-TextButton_2.Size = UDim2.new(0, 206, 0, 206)
-TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "Elite City"
-TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.TextScaled = true
-TextButton_2.TextSize = 14.000
-TextButton_2.TextWrapped = true
-
-UICorner_2.CornerRadius = UDim.new(0, 20)
-UICorner_2.Parent = TextButton_2
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
-local ScreenGui = Instance.new("ScreenGui")
-local TextButton = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local TextButton_2 = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
 local TextButton_3 = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 
